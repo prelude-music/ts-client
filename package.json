@@ -1,7 +1,8 @@
 {
     "name": "ts-client",
     "version": "0.0.0",
-    "main": "index.js",
+    "main": "dist/ApiClient.js",
+    "module": "dist/ApiClient.js",
     "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
