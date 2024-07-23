@@ -11,6 +11,7 @@
     "moduleResolution": "Node16",
     "inlineSourceMap": true,
     "outDir": "./dist",
+    "declaration": true,
     "removeComments": true,
     "importHelpers": true,
     "importsNotUsedAsValues": "remove",
