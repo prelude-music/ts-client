@@ -5,6 +5,8 @@
     "module": "dist/ApiClient.js",
     "type": "module",
     "scripts": {
+        "build": "tsc",
+        "prepare": "nmp run build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
