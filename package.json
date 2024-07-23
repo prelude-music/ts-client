@@ -1,5 +1,5 @@
 {
-    "name": "ts-client",
+    "name": "@prelude-music/ts-client",
     "version": "0.0.0",
     "main": "dist/ApiClient.js",
     "module": "dist/ApiClient.js",
