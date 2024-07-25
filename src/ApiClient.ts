@@ -3,6 +3,13 @@ class ApiClient {
     }
 
     /**
+     * Get API server info
+     */
+    public async info() {
+        return await this.fetch<ApiClient.ApiServer>(new ApiClient.ApiRequest(this, "/"));
+    }
+
+    /**
      * List artists
      * @param [limit] Number of resources to return per page. >= 1, default 100
      * @param [page] Page number to return. >= 1, default 1
@@ -217,6 +224,16 @@ namespace ApiClient {
          * Resources
          */
         resources: T[];
+    }
+
+    export interface ApiServer {
+        prelude: {
+            version: `${number}.${number}.${number}${`-${string}` | ""}`,
+            spec: {
+                json: "openapi.json",
+                yaml: "openapi.yaml"
+            }
+        }
     }
 
     export interface Artist {
