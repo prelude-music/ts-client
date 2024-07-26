@@ -3,6 +3,7 @@
     "version": "0.0.0",
     "main": "dist/ApiClient.js",
     "module": "dist/ApiClient.js",
+    "types": "dist/ApiClient.d.ts",
     "type": "module",
     "scripts": {
         "build": "tsc",
@@ -12,7 +13,7 @@
     "keywords": [],
     "author": "",
     "license": "LGPL-3.0-only",
-    "description": "",
+    "description": "Prelude API client in TypeScript ",
     "devDependencies": {
         "typescript": "^5.5.4"
     }
