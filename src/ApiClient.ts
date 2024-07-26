@@ -175,8 +175,9 @@ namespace ApiClient {
         }
 
         public static concatUrl(baseUrl: URL, path: string) {
-            baseUrl.pathname = baseUrl.pathname + (baseUrl.pathname.endsWith("/") && path.startsWith("/") ? path.slice(1) : path);
-            return baseUrl;
+            const url = new URL(baseUrl);
+            url.pathname = baseUrl.pathname + (baseUrl.pathname.endsWith("/") && path.startsWith("/") ? path.slice(1) : path);
+            return url;
         }
 
         public async fetch() {
